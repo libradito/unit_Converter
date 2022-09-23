@@ -5,6 +5,15 @@
   --main-h2-color: #5a537b;
   --main-p-color: #353535;
   --second-bg-color: #f4f4f4;
+  --convertion-bg: #ffffff;
+}
+
+.dark {
+  --second-bg-color: #1f2937;
+  --main-h2-color: #ccc1ff;
+
+  --main-p-color: #ffffff;
+  --convertion-bg: #273549;
 }
 
 * {
@@ -22,8 +31,10 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  min-width: 360px;
+  min-width: 300px;
+  background-color: #1c1c1c;
 }
+/* header  container*/
 header {
   font-size: 1.3rem;
   color: #ecfdf5;
@@ -31,66 +42,83 @@ header {
   height: 1rem;
   margin-bottom: 8rem;
 }
-.header-container {
+.header-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-main {
-  width: 550px;
-  height: 729px;
-  margin: 0 auto;
-}
-
-section {
-  width: 95%;
-  margin: 0 auto;
-  padding: 4rem;
 }
 
 .header p {
   font-size: 1rem;
   color: var(--main-title-color);
 }
-.container {
-  background-color: aqua;
-  width: 95%;
-  margin-top: 2rem;
+
+/* main */
+
+main {
+  width: 90%;
+  height: 729px;
+  margin: 0 auto;
+  min-width: 230px;
+  max-width: 550px;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 
 .header-container {
   background-color: var(--main-header-color);
   color: var(--main-title-color);
   text-align: center;
+  width: 100%;
 }
 
 .header-container h1 {
   font-size: 2.5rem;
 }
-.header-container p {
+.unit-container {
+  width: 117px;
+  border: 2px solid #b295ff;
+  border-radius: 5px;
+  margin: 3rem auto;
+}
+.unit-container p {
   font-size: 5.8rem;
+  padding: 1.7rem;
 }
 .header-container button {
   font-size: 1.6rem;
+  padding: 0.9rem 2.7rem;
+  margin-bottom: 3rem;
 }
 
 .convertion-types {
-  padding: 3rem;
   background-color: var(--second-bg-color);
 }
 .convertion-types h2 {
   color: var(--main-h2-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 0.9rem;
 }
 .convertion-types p {
   color: var(--main-p-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding-bottom: 1.4rem;
 }
 .convertion-types .convertions {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--convertion-bg);
   margin-top: 2rem;
+  padding: 2rem;
 }
 
 /* --------------------------------- switch --------------------------------- */
@@ -127,7 +155,7 @@ section {
   width: 10px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--second-bg-color);
+  background-color: #1f2937;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
