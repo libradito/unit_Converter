@@ -2,16 +2,18 @@
   --main-bg-color: #1c1c1c;
   --main-title-color: #ffffff;
   --main-header-color: #6943ff;
+}
+
+.light {
+  --second-bg-color: #f4f4f4;
   --main-h2-color: #5a537b;
   --main-p-color: #353535;
-  --second-bg-color: #f4f4f4;
   --convertion-bg: #ffffff;
 }
 
 .dark {
   --second-bg-color: #1f2937;
   --main-h2-color: #ccc1ff;
-
   --main-p-color: #ffffff;
   --convertion-bg: #273549;
 }
@@ -85,9 +87,10 @@ section {
   border-radius: 5px;
   margin: 3rem auto;
 }
-.unit-container p {
-  font-size: 5.8rem;
-  padding: 1.7rem;
+.unit-container input {
+  width: 100%;
+  font-size: 6rem;
+  padding: 1.8rem 0.4rem 1.8rem 1.8rem;
 }
 .header-container button {
   font-size: 1.6rem;
